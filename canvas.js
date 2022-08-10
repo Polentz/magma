@@ -33,7 +33,7 @@ window.addEventListener("touchmove", (event) => {
 })
 
 function drawCircle() {
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "#fff";
     ctx.beginPath();
     ctx.arc(mouse.x, mouse.y, 16, 0, Math.PI * 2)
     ctx.fill();
@@ -57,7 +57,7 @@ class Particle {
     }
     draw() {
         ctx.beginPath();
-        ctx.strokeStyle = "000"
+        ctx.strokeStyle = "#000"
         ctx.arc(this.x, this.y, 160, 0, Math.PI * 2)
         ctx.stroke();
     }
